@@ -3,6 +3,7 @@ import MainLayout from "./layout/MainLayout"
 import Home from "./pages/Home"
 import Posts from "./pages/Posts"
 import SinglePost from "./pages/SinglePost"
+import InfinitePosts from "./pages/InfinitePosts"
 
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
                <Route index element={<Home/>} />
                <Route path="/posts" element={<Posts/>} />
                <Route path="/posts/:id" element={<SinglePost/>} />
+               <Route path="/infinite-posts" element={<InfinitePosts/>} />
+
           </Route>
         </Routes>     
     </BrowserRouter>
